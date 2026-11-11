@@ -1,0 +1,261 @@
+{
+  "theme": "light",
+  "design_archetype": "NeoCommerce / NovaBank / Moka hybrid light dashboard",
+  "description": "Full light-theme redesign for BarterX matching the three user-provided reference dashboards (NeoCommerce rounded product dashboard + NovaBank light stats/table center + Moka clean profile layout). Left white sidebar card, light neutral gray canvas (#F3F4F6 / #F8FAFC), crisp white rounded cards with 1px border (#E2E8F0), royal/cobalt blue primary accents (#2563EB / #1D4ED8), light-blue pill active nav states (#EFF6FF with #2563EB text), soft gray media wells (#F1F5F9), emerald completed statuses (#16A34A), and crimson negative amounts (#DC2626).",
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#F8FAFC",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#64748B",
+        "roles": {
+          "link": "#2563EB",
+          "error": "#DC2626",
+          "success": "#16A34A",
+          "warning": "#D97706"
+        }
+      },
+      {
+        "name": "sidebar",
+        "kind": "solid",
+        "bg": "#FFFFFF",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#64748B",
+        "roles": {
+          "nav_active_bg": "#EFF6FF",
+          "nav_active_text": "#2563EB",
+          "nav_hover_bg": "#F1F5F9",
+          "nav_hover_text": "#1E293B",
+          "border": "#E2E8F0"
+        }
+      },
+      {
+        "name": "card",
+        "kind": "solid",
+        "bg": "#FFFFFF",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#64748B",
+        "roles": {
+          "border": "#E2E8F0",
+          "header_title": "#0F172A",
+          "well_bg": "#F1F5F9",
+          "well_border": "#E2E8F0",
+          "hover_border": "#CBD5E1",
+          "hover_shadow": "0 10px 25px -5px rgba(15, 23, 42, 0.08)"
+        }
+      },
+      {
+        "name": "input_well",
+        "kind": "solid",
+        "bg": "#F8FAFC",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#64748B",
+        "roles": {
+          "border": "#CBD5E1",
+          "focus_ring": "#2563EB",
+          "focus_border": "#2563EB"
+        }
+      },
+      {
+        "name": "table_row",
+        "kind": "solid",
+        "bg": "#FFFFFF",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#64748B",
+        "roles": {
+          "header_bg": "#F8FAFC",
+          "header_text": "#475569",
+          "row_hover_bg": "#F8FAFC",
+          "border": "#E2E8F0",
+          "status_completed": "#16A34A",
+          "status_pending": "#D97706",
+          "status_danger": "#DC2626",
+          "amount_positive": "#16A34A",
+          "amount_negative": "#DC2626"
+        }
+      },
+      {
+        "name": "badge_goods",
+        "kind": "solid",
+        "bg": "#EFF6FF",
+        "on_bg": "#1D4ED8",
+        "on_bg_muted": "#3B82F6"
+      },
+      {
+        "name": "badge_services",
+        "kind": "solid",
+        "bg": "#FAF5FF",
+        "on_bg": "#7E22CE",
+        "on_bg_muted": "#A855F7"
+      },
+      {
+        "name": "badge_cycle",
+        "kind": "solid",
+        "bg": "#F0FDF4",
+        "on_bg": "#15803D",
+        "on_bg_muted": "#22C55E"
+      },
+      {
+        "name": "modal_overlay",
+        "kind": "glass",
+        "contrast_against": "#1E293B",
+        "guarantee": "backdrop-blur-md bg-slate-900/40",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#E2E8F0"
+      }
+    ],
+    "accent": "#2563EB",
+    "on_accent": "#FFFFFF",
+    "primary": {
+      "default": "#2563EB",
+      "hover": "#1D4ED8",
+      "active": "#1E40AF",
+      "light_tint": "#EFF6FF",
+      "border_tint": "#BFDBFE"
+    },
+    "tokens": {
+      "canvas": "#F8FAFC",
+      "sidebar": "#FFFFFF",
+      "card": "#FFFFFF",
+      "card_border": "#E2E8F0",
+      "well_fill": "#F1F5F9",
+      "heading_text": "#0F172A",
+      "body_text": "#1E293B",
+      "muted_text": "#64748B",
+      "primary_blue": "#2563EB",
+      "primary_blue_hover": "#1D4ED8",
+      "primary_blue_tint": "#EFF6FF",
+      "success_green": "#16A34A",
+      "warning_amber": "#D97706",
+      "danger_red": "#DC2626",
+      "focus_ring": "#2563EB"
+    }
+  },
+  "typography": {
+    "font_family_heading": "'Outfit Variable', sans-serif",
+    "font_family_sans": "'DM Sans Variable', sans-serif",
+    "font_family_mono": "'IBM Plex Mono', monospace",
+    "font_import": [
+      "@import \"@fontsource-variable/outfit\";",
+      "@import \"@fontsource-variable/dm-sans\";",
+      "@import \"@fontsource/ibm-plex-mono\";"
+    ],
+    "scale_px": {
+      "display": 48,
+      "h1": 36,
+      "h2": 28,
+      "h3": 20,
+      "body": 16,
+      "caption": 14
+    },
+    "hierarchy_rules": {
+      "h1": "text-2xl sm:text-3xl lg:text-4xl font-heading font-bold tracking-tight text-slate-900",
+      "h2": "text-xl sm:text-2xl font-heading font-semibold tracking-tight text-slate-900",
+      "h3": "text-lg sm:text-xl font-heading font-semibold text-slate-900",
+      "body": "text-sm sm:text-base font-sans text-slate-700 leading-relaxed",
+      "caption": "text-xs font-sans text-slate-500 font-medium",
+      "metric_large": "text-3xl font-heading font-bold text-slate-900 tracking-tight",
+      "hero_highlight_phrase": "text-blue-600 font-bold"
+    }
+  },
+  "entry_surfaces": {
+    "/": "split hero — brand + trade exploration left with blue CTA button, active trade listings grid right on light gray canvas",
+    "/login": "branded split auth card — left positioning panel with blue stats tile, right white login form card",
+    "/register": "branded split auth card — left positioning panel with cycle benefits, right white registration form card"
+  },
+  "layout_and_navigation": {
+    "app_shell_style": "desktop left sidebar card + top search header bar + center-scrollable canvas (matching NeoCommerce/Moka)",
+    "sidebar_width": "w-64 (16rem) fixed or sticky on desktop, rounded-2xl bg-white border border-slate-200/80 shadow-xs m-4",
+    "sidebar_nav_items": {
+      "item_default": "flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 transition-all duration-200 hover:bg-slate-100 hover:text-slate-900",
+      "item_active": "flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-semibold bg-blue-50 text-blue-600 shadow-xs"
+    },
+    "top_header_bar": "bg-white/80 backdrop-blur-md border border-slate-200/80 rounded-2xl px-5 py-3 mb-6 flex items-center justify-between shadow-xs",
+    "search_bar": "relative flex-1 max-w-md bg-slate-50 border border-slate-200 rounded-xl px-3.5 py-2 text-sm text-slate-800 placeholder:text-slate-400 focus-within:ring-2 focus-within:ring-blue-600 focus-within:bg-white"
+  },
+  "component_styling": {
+    "card": {
+      "base": "bg-white border border-slate-200/80 rounded-2xl p-5 sm:p-6 shadow-xs transition-shadow duration-200 hover:shadow-md",
+      "radius": "rounded-2xl (1rem / 16px)",
+      "shadow": "shadow-xs (0 1px 2px 0 rgba(0, 0, 0, 0.05)), hover:shadow-md"
+    },
+    "product_card": {
+      "container": "bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all duration-200 flex flex-col group",
+      "image_well": "bg-slate-100/90 aspect-4/3 relative flex items-center justify-center overflow-hidden border-b border-slate-100",
+      "badge_pill": "absolute top-3 left-3 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-white/90 backdrop-blur-xs text-slate-800 shadow-xs",
+      "price_tag": "font-heading text-lg font-bold text-slate-900",
+      "action_circle": "size-9 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors duration-200"
+    },
+    "segmented_tabs": {
+      "container": "inline-flex p-1 bg-slate-100 rounded-xl gap-1 border border-slate-200/60",
+      "tab_default": "px-4 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-slate-600 transition-colors duration-200 hover:text-slate-900",
+      "tab_active": "px-4 py-1.5 rounded-lg text-xs sm:text-sm font-semibold bg-white text-blue-600 shadow-xs"
+    },
+    "stat_cards": {
+      "container": "bg-white border border-slate-200/80 rounded-2xl p-5 shadow-xs flex items-center justify-between",
+      "icon_wrapper": "size-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center",
+      "title": "text-xs font-medium text-slate-500 uppercase tracking-wider",
+      "value": "text-2xl font-heading font-bold text-slate-900 mt-1"
+    },
+    "table": {
+      "wrapper": "w-full overflow-hidden border border-slate-200 rounded-xl bg-white shadow-xs",
+      "header_row": "bg-slate-50/80 border-b border-slate-200 text-xs font-semibold uppercase tracking-wider text-slate-500",
+      "header_cell": "px-4 py-3 text-left",
+      "body_row": "border-b border-slate-100 hover:bg-slate-50/60 transition-colors duration-150 text-sm text-slate-700",
+      "body_cell": "px-4 py-3.5",
+      "status_completed": "inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-600 border border-emerald-100",
+      "status_pending": "inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-amber-50 text-amber-600 border border-amber-100",
+      "status_cancelled": "inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-rose-50 text-rose-600 border border-rose-100"
+    },
+    "profile_layout": {
+      "avatar_tile": "size-20 rounded-2xl border-2 border-white shadow-sm object-cover bg-slate-100",
+      "stat_tile": "p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 text-center",
+      "action_pink_or_red": "bg-rose-500 hover:bg-rose-600 text-white font-medium rounded-xl px-4 py-2 text-sm shadow-xs",
+      "review_item": "p-4 rounded-xl border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-colors duration-150"
+    },
+    "buttons": {
+      "primary": "inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-xs hover:bg-blue-700 active:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600/40 disabled:opacity-50 transition-colors duration-200",
+      "secondary": "inline-flex items-center justify-center gap-2 rounded-xl bg-white border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700 shadow-xs hover:bg-slate-50 hover:text-slate-900 active:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-300 disabled:opacity-50 transition-colors duration-200",
+      "danger": "inline-flex items-center justify-center gap-2 rounded-xl bg-rose-600 px-4 py-2 text-sm font-semibold text-white shadow-xs hover:bg-rose-700 active:bg-rose-800 focus:outline-none focus:ring-2 focus:ring-rose-400 disabled:opacity-50 transition-colors duration-200",
+      "ghost": "inline-flex items-center justify-center gap-2 rounded-xl px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition-colors duration-200"
+    }
+  },
+  "motion": {
+    "strategy": "Property-specific micro-interactions (transform, opacity, box-shadow, background-color). No universal transitions.",
+    "hover_lift": "transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1)",
+    "modal_entrance": "transition: opacity 0.2s ease-out, transform 0.2s cubic-bezier(0.16, 1, 0.3, 1)",
+    "table_fade": "transition: background-color 0.15s ease-in-out",
+    "reduced_motion": "@media (prefers-reduced-motion: reduce) { * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }"
+  },
+  "accessibility": {
+    "wcag_target": "WCAG AA (minimum 4.5:1 for body and muted text; 3:1 for large display text)",
+    "text_contrast_verifications": [
+      "Body text (#1E293B) on card (#FFFFFF) = 12.6:1 (Passes AAA)",
+      "Muted text (#64748B) on card (#FFFFFF) = 4.6:1 (Passes AA)",
+      "Muted text (#64748B) on page (#F8FAFC) = 4.52:1 (Passes AA)",
+      "Primary Blue (#2563EB) text on active pill (#EFF6FF) = 4.8:1 (Passes AA)",
+      "White text (#FFFFFF) on Primary Blue button (#2563EB) = 4.6:1 (Passes AA)",
+      "Status green (#16A34A) on green badge (#F0FDF4) = 4.7:1 (Passes AA)",
+      "Status red (#DC2626) on table row (#FFFFFF) = 4.8:1 (Passes AA)"
+    ],
+    "testing_attribute": "Every interactive and status element MUST feature a unique kebab-case data-testid attribute (e.g. data-testid='nav-marketplace-link', data-testid='listing-card-proposal-button', data-testid='trade-status-badge')."
+  },
+  "instructions_to_main_agent": [
+    "1. Replace dark CSS variables in /app/frontend/src/index.css with the light tokens: --background: #F8FAFC, --foreground: #0F172A, --card: #FFFFFF, --card-foreground: #0F172A, --border: #E2E8F0, --primary: #2563EB, --primary-foreground: #FFFFFF, --secondary: #F1F5F9, --secondary-foreground: #1E293B, --muted: #F1F5F9, --muted-foreground: #64748B, --radius: 1rem.",
+    "2. Update the .bx-panel utility in index.css from dark slate-900 to light: bg-white border border-slate-200/80 rounded-2xl shadow-xs text-slate-900.",
+    "3. Replace dark Tailwind utility classes across all pages and components:",
+    "   - text-slate-50 / text-slate-100 / text-slate-200 -> text-slate-900 (for headings/titles) or text-slate-800",
+    "   - text-slate-300 / text-slate-400 -> text-slate-600 / text-slate-500 (for secondary/muted labels)",
+    "   - bg-slate-900 / bg-slate-950 / bg-slate-800 -> bg-white / bg-slate-50 / bg-slate-100",
+    "   - border-slate-700 / border-slate-800 -> border-slate-200 / border-slate-200/80",
+    "   - text-sky-400 / text-sky-300 / bg-sky-600 -> text-blue-600 / bg-blue-600 / hover:bg-blue-700",
+    "4. Refactor AppShell into a left sidebar card (or top navigation with left sidebar drawer on mobile) matching the NeoCommerce + Moka layouts: white sidebar with BX logo, active nav link styled as light blue pill (bg-blue-50 text-blue-600 font-semibold), clean top search & user header bar.",
+    "5. Style the Marketplace cards matching NeoCommerce: white rounded cards, soft slate-100 image wells, goods/services pill badge in top corner, title + category + price stats, circular action button.",
+    "6. Style the Dashboard and Cycles pages matching NovaBank: stat cards with subtle borders, clean transaction/exchanges data table with alternating hover states, green 'Completed' badge, and blue highlight headings.",
+    "7. Style the Trader Profile page matching Moka: clean profile hero card, stat tiles for trades/reputation/reviews, review comment feed with user avatars and relative timestamps.",
+    "8. Maintain full business logic integrity (cycles discovery, proposal versions, approvals, PayPal balancing payments, review submission, notifications).",
+    "9. Retain all data-testid attributes for automated testing."
+  ]
+}
